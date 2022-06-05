@@ -105,6 +105,7 @@ def get_max_salary(path):
                 max_salary = int(job["max_salary"])
     return max_salary
 
+
 def get_min_salary(path):
     """Get the minimum salary of all jobs
 

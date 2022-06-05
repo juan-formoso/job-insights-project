@@ -44,6 +44,7 @@ def filter_by_job_type(jobs, job_type):
             jobs_list.append(job)
     return jobs_list
 
+
 def get_unique_industries(path):
     """Checks all different industries and returns a list of them
 

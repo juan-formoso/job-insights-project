@@ -3,7 +3,9 @@ from src.jobs import read
 
 
 def test_sort_by_criteria():
-    #Ref: https://github.com/tryber/sd-014-b-project-job-insights/pull/14
+    """
+    Ref: https://github.com/tryber/sd-014-b-project-job-insights/pull/14
+    """
     jobs = read("src/jobs.csv")[:10]
 
     sort_by(jobs, "min_salary")

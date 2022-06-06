@@ -75,10 +75,11 @@ def list_jobs():
     return render_template("list_jobs.jinja2", ctx=ctx)
 
 
-@bp.route("/job/<int:index>")
+@bp.route("/job/<int: index>")
 def job(index):
-    get_a_job = get_job("src/jobs.csv", index)
-    return render_template("job.jinja2", job=get_a_job)
+    file_content = read("src/jobs.csv")
+    jobs = get_job(file_content, index)
+    return render_template("job.jinja2", job=jobs)
 
 
 def init_app(app: Flask):

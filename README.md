@@ -97,128 +97,73 @@ Desenvolvido usando:
   │   └── test_routes_and_views.py
   ```
 
-<details>
-  <summary><strong>🏕️ Ambiente Virtual</strong></summary><br />
-  O Python oferece um recurso chamado de ambiente virtual, onde permite sua máquina rodar sem conflitos, diferentes tipos de projetos com diferentes versões de bibliotecas.
+### Ambiente Virtual 🏕️
+O **Python** oferece um recurso chamado de ambiente virtual, onde permite a máquina rodar sem conflitos, diferentes tipos de projetos com diferentes versões de bibliotecas.
 
-  1. **criar o ambiente virtual**
-
+1. **Criar o ambiente virtual**
   ```bash
   $ python3 -m venv .venv
   ```
 
-  2. **ativar o ambiente virtual**
-
+2. **Ativar o ambiente virtual**
   ```bash
   $ source .venv/bin/activate
   ```
 
-  3. **instalar as dependências no ambiente virtual**
-
+3. **Instalar as dependências no ambiente virtual**
   ```bash
   $ python3 -m pip install -r dev-requirements.txt
   ```
 
-  Com o seu ambiente virtual ativo, as dependências serão instaladas neste ambiente.
-  Quando precisar desativar o ambiente virtual, execute o comando "deactivate". Lembre-se de ativar novamente quando voltar a trabalhar no projeto.
+Com o ambiente virtual ativo, as dependências serão instaladas neste ambiente.
+Para **desativar** o ambiente virtual execute o comando: `deactivate`.
 
-  O arquivo `dev-requirements.txt` contém todas as dependências que serão utilizadas no projeto, ele está agindo como se fosse um `package.json` de um projeto `Node.js`.
-</details>
+O arquivo `dev-requirements.txt` contém todas as dependências utilizadas no projeto.
 
-<details>
-  <summary><strong>🛠 Testes</strong></summary><br />
 
-  Para executar os testes certifique-se de que você está com o ambiente virtual ativado.
+### Executando os testes 🛠
+Para executar os testes certifique-se de que você está com o ambiente virtual ativado.
 
-  <strong>Executar os testes</strong>
-
+- **Executar os testes**
   ```bash
   $ python3 -m pytest
   ```
 
-  O arquivo `pyproject.toml` já configura corretamente o pytest. Entretanto, caso você tenha problemas com isso e queira explicitamente uma saída completa, o comando é:
-
+- O arquivo `pyproject.toml` já configura corretamente o pytest. Entretanto, caso você tenha problemas com isso e queira explicitamente uma saída completa, o comando é:
   ```bash
   python3 -m pytest -s -vv
   ```
 
-  Caso precise executar apenas um arquivo de testes basta executar o comando:
-
+- Caso precise executar apenas um arquivo de testes basta executar o comando:
   ```bash
   python3 -m pytest tests/nomedoarquivo.py
   ```
 
-  Caso precise executar apenas uma função de testes basta executar o comando:
-
+- Caso precise executar apenas uma função de testes basta executar o comando:
   ```bash
   python3 -m pytest -k nome_da_func_de_tests
   ```
 
-  Se desejar que os testes parem de ser executados quando acontecer o primeiro erro, use o parâmetro `-x`
-
+- Se desejar que os testes parem de ser executados quando acontecer o primeiro erro, use o parâmetro `-x`
   ```bash
   python3 -m pytest -x tests/test_jobs.py
   ```
   
-  Para executar um teste específico de um arquivo, basta executar o comando:
-
+- Para executar um teste específico de um arquivo, basta executar o comando:
   ```bash
   python3 -m pytest tests/nomedoarquivo.py::test_nome_do_teste
   ```
 
-  Se quiser saber mais sobre a instalação de dependências com `pip`, veja esse [artigo](https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1).
+Se quiser saber mais sobre a instalação de dependências com `pip`, veja esse [artigo](https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1).
 
-  <p align="center">
-    <img src="/.images/flask-logo.png" alt="Logo Flask" width="200"/>
-  </p>
+<p align="center">
+  <img src="/.images/flask-logo.png" alt="Logo Flask" width="200"/>
+</p>
 
-  Além dos testes com o Pytest, você pode (e vai ser bem bacana) rodar a aplicação flask para visualizar no navegador o resultado do desenvolvimento das funções.
-  Para isso, digite o comando `flask run`, e acesse o site gerado pelo Flask em `http://localhost:5000`. No começo do desenvolvimento, você verá que muitas coisas não funcionam, mas conforme você for implementando os requisitos, perceberá que a aplicação web começa a utilizar suas implementações e passa a ganhar vida.
+Além dos testes com o Pytest, você pode (e vai ser bem bacana) rodar a aplicação flask para visualizar no navegador o resultado do desenvolvimento das funções.
+  
+Para isso, digite o comando `flask run`, e acesse o site gerado pelo Flask em `http://localhost:5000`. No começo do desenvolvimento, você verá que muitas coisas não funcionam, mas conforme você for implementando os requisitos, perceberá que a aplicação web começa a utilizar suas implementações e passa a ganhar vida.
 
-  <p align="center">
-    <img src="/.images/sistema.png" alt="Tela Aplicação" width="800"/>
-  </p>
-
-</details>
-
-
-<details>
-  <summary><strong>🤝 Depois de terminar o desenvolvimento (opcional)</strong></summary><br />
-
-  Para sinalizar que o seu projeto está pronto para o _"Code Review"_, faça o seguinte:
-
-  - Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-    - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-    - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-    - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-014-b`.
-
-  Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
-</details>
-
-<details>
-  <summary><strong>🕵🏿 Revisando um pull request</strong></summary><br />
-
-  Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
-</details>
-
-<details>
-  <summary><strong>🗣 Nos dê feedbacks sobre o projeto!</strong></summary><br />
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. 
-**Leva menos de 3 minutos!**
-
-[FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-</details>
-
-<details>
-  <summary><strong>🗂 Compartilhe seu portfólio!</strong></summary><br />
-
-  Você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
-
-</details>
+<p align="center">
+  <img src="/.images/sistema.png" alt="Tela Aplicação" width="800"/>
+</p>

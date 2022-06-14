@@ -39,6 +39,8 @@ Desenvolvido usando:
 
 5. Se divirta para fazer o que quiser. ;)
 
+-------------------------------
+
 ### Estrutura do projeto :building_construction:
 
   ```
@@ -96,6 +98,8 @@ Desenvolvido usando:
   │   ├── test_more_insights.py
   │   └── test_routes_and_views.py
   ```
+  
+-------------------------------
 
 ### Ambiente Virtual 🏕️
 O **Python** oferece um recurso chamado de ambiente virtual, onde permite a máquina rodar sem conflitos, diferentes tipos de projetos com diferentes versões de bibliotecas.
@@ -120,6 +124,7 @@ Para **desativar** o ambiente virtual execute o comando: `deactivate`.
 
 O arquivo `dev-requirements.txt` contém todas as dependências utilizadas no projeto.
 
+-------------------------------
 
 ### Executando os testes 🛠
 Para executar os testes certifique-se de que você está com o ambiente virtual ativado.
@@ -154,7 +159,11 @@ Para executar os testes certifique-se de que você está com o ambiente virtual 
   python3 -m pytest tests/nomedoarquivo.py::test_nome_do_teste
   ```
 
+-------------------------------
+
 **OBS: Se quiser saber mais sobre a instalação de dependências com `pip`, veja esse [artigo](https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1). :grinning:**
+
+-------------------------------
   
 ### Rodando o App :hot_pepper:
 Para rodar a aplicação **Flask**, digite o comando `flask run`, e acesse o site gerado pelo Flask em `http://localhost:5000`.
